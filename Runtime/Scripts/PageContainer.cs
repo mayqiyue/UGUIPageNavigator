@@ -313,7 +313,7 @@ namespace UGUIPageNavigator.Runtime
 
             animator.runtimeAnimatorController = overrideController;
             animator.Play(name);
-            await UniTask.Delay(TimeSpan.FromSeconds(clip.length), delayType: DelayType.UnscaledDeltaTime, cancellationToken: this.destroyCancellationToken);
+            await UniTask.Delay(TimeSpan.FromSeconds(clip.length), delayType: DelayType.UnscaledDeltaTime, cancellationToken: this.GetCancellationTokenOnDestroy());
         }
 
         private AnimationClip FixClip(AnimationClip clip, RectTransform rectTransform)
