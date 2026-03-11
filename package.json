@@ -5,7 +5,7 @@
     "name": "mayqiyue",
     "url": "https://github.com/mayqiyue"
   },
-  "version": "0.0.4",
+  "version": "0.0.6",
   "unity": "2021.4",
   "description": "Provides an efficient page navigation system for UGUI.",
   "keywords": [
